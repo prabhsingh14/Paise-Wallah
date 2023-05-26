@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paise Wallah</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .ctaSection {
+        background-size: 100% 100%;
+      }
+
+      .companiesList {
+        animation: 10s infinite linear moveCompany;
+      }
+
+      @keyframes moveCompany {
+        0% {
+          top: 0;
+        }
+
+        100% {
+          top: -50%;
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- nav bar -->
+    <nav class="bg-deepBlue">
+      <div class="relative w-270 mx-auto flex items-center justify-between">
+        <a href="" class="cursor-pointer py-7 pr-7">
+          <!-- logo -->
+          <img
+            class="ml-40"
+            src="Screenshot (274).png"
+            width="125px"
+            height="30px"
+            alt=""
+          />
+        </a>
+
+        <ul class="flex space-x-10">
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Payments</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Banking</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Pay Bills</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Cards</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Insurance</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Loans</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+
+          <li
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+          >
+            <a href="">Support</a>
+
+            <div
+              class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+        </ul>
+
+        <div class="flex space-x-6">
+          <button
+            class="py-3 px-5 font-mullish text-white border-lightBlue300 border rounded-sm text-sm font-bold"
+          >
+            Log in
+          </button>
+
+          <button
+            class="py-3 px-4 rounded-sm font-mullish text-sm font-bold bg-white text-lime-600 border transition-all duration-200 hover:text-green-600"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- front-top -->
+    <section class="relative bg-deepBlue">
+      <div class="w-10/12 flex flex-row justify-between items-center mx-auto">
+        <div class="flex flex-col gap-4">
+          <h1 class="font-mullish font-bold text-white text-4xl leading-10">
+            Power Your Business, <br />
+            Grow Your Money
+          </h1>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <p class="font-mullish text-1xl leading-7 text-white opacity-80">
+            Simple, secure way to make payments / pay bills.
+            <br />
+            <span class="font-bold">10% CASHBACK</span> for new customers.
+            <br />
+            Insure your health, life, vehicles etc., with
+            <span class="font-bold">Paise Wallah</span>.
+            <br />
+            We run on <span class="font-bold">TRUST</span>.
+          </p>
+          <button
+            class="bg-lightBlue self-center text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-3.5 px-3.5"
+          >
+            Sign Up Now
+          </button>
+        </div>
+
+        <img
+          src="como-emitir-nota-fiscal-em-contingencia.jpg"
+          alt=""
+          class="max-w-2"
+        />
+      </div>
+
+      <div class="w-[103%] absolute left-0 right-0">
+        <img src="hero-shape.svg" alt="" class="w-full object-fill" />
+      </div>
+    </section>
+
+    <!-- feature-1 -->
+    <section class="relative mt-[190px]">
+      <img
+        src="q.jpg"
+        alt=""
+        width="200"
+        loading="lazy"
+        class="absolute -top-[7rem] left-[10rem]"
+      />
+      <img
+        src="course-835-ux.jpg"
+        alt=""
+        width="230"
+        height="167"
+        class="absolute top-[3rem] right-0 inline-block z-10"
+      />
+      <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+        <h2 class="font-mullish text-center text-2xl leading-[1.2] font-bold">
+          The Only Payment App
+          <span class="font-bold text-green-600">LICENSED BY RBI</span>
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+        <div
+          class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12"
+        >
+          <div class="flex flex-col justify-between items-center w-full">
+            <h3 class="font-mullish text-xl leading-10 font-bold max-w-[500px]">
+              Say <span class="font-bold text-lightBlue">GOODBYE</span> to
+              Payment
+              <span class="font-bold text-lightBlue"
+                >APPS THAT TRACK YOUR DATA</span
+              >
+            </h3>
+
+            <ul class="space-y-2">
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span>20M+ Users</span>
+              </li>
+
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span>The Only Payment Gateway Licensed by 120+ Countries</span>
+              </li>
+
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span>2000+ Banks For Normal Users</span>
+              </li>
+
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span
+                  >Non-Trackable Payment Support For Special Citizens Of the
+                  Country</span
+                >
+              </li>
+
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span>Special PayCard for children below 18 years of age</span>
+              </li>
+
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather="check-circle" class="text-greenLight"></i>
+                <span>Loan Approval within 2 days</span>
+              </li>
+            </ul>
+
+            <div class="flex flex-row items-center space-x-4">
+              <button
+                class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
+              >
+                Sign Up
+                <div
+                  class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="w-[20px] h-[20px] -skew-x-[20deg]"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <img
+            src="1.jpg"
+            alt=""
+            class="max-w-[400px] absolute -right-11 bottom-0"
+          />
+        </div>
+
+        <hr class="mt-10" />
+
+        <div class="w-full grid grid-cols-3 gap-4 mt-10">
+          <!-- Box-1 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fas fa-handshake" style="font-size: 30px"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Payment Links
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  Generate and Share your Unique Payment Links on Whatsapp,
+                  Instagram etc., and get paid immediately
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight">NO COMMISSION</span>
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Box-2 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Your Own Store
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  Create your own store just by drag and drop, sell your
+                  products or services and start earning. Already, have a store!
+                  Don't worry, you can start selling directly.
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight">NO COMMISSION</span>
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Box-3 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Transaction Details
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  Just on one link, get all your details in encrypted mode.
+                  Create a link, get special-id and store all your details in
+                  any storage device.
+                  <span class="font-bold text-greenLight"
+                    >Don't share your special-id</span
+                  >
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight"
+                    >WE NEVER SHARE YOUR INFO</span
+                  >
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Box-4 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fa fa-road mt-10" aria-hidden="true"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Route
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  Your payment traverse 10,000+ IP Addresses. Thus, can't be
+                  traced easily.
+                  <span class="font-bold text-greenLight"
+                    >This feature is only for government authorised
+                    people.</span
+                  >
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight">SECURE AND SAFE</span>
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Box-5 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fa fa-money mt-10"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Collections
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  Collect your payments in digital form to protect, you can
+                  easily convert it in physical form
+                  <span class="font-bold text-greenLight"
+                    >only after government permission for more than transaction
+                    of 2 lakhs in a single-time</span
+                  >
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight">DIGITAL MONEY</span>
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Box-6 -->
+          <div class="w-full min-h-[15rem] relative cursor-pointer">
+            <i class="fas fa-folder mt-10"></i>
+            <div
+              class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+            >
+              <div>
+                <h3
+                  class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                >
+                  Conditions
+                </h3>
+                <p class="font-mullish text-grayText mt-6">
+                  There are few conditions for users who want to get special-id.
+                  <br />
+                  <span class="font-bold text-greenLight"
+                    >No criminal record, Can't be a Politician. <br />
+                    Government Authorisation and.....</span
+                  >
+                </p>
+                <br />
+                <p>
+                  <span class="font-bold text-greenLight"
+                    >WE NEVER HAD A FRAUD OR SPAM ACCOUNT</span
+                  >
+                </p>
+              </div>
+
+              <div class="flex items-center cursor-pointer group">
+                <a
+                  href=""
+                  class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                >
+                  Know More</a
+                >
+
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature-2 -->
+    <section
+      class="bg-[url(feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[20rem] pb-[500px] mt-14"
+    >
+      <div class="w-10/12 max-w-[1080px] pt-4 mx-auto relative">
+        <h2
+          class="font-mullish text-center text-2xl leading-[1.2] text-white font-bold"
+        >
+          Explore Paise Wallah Payment System For Businesses
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+        <!-- main content -->
+        <div class="w-full min-h[440px] flex flex-col relative">
+          <img
+            src="R-removebg-preview.png"
+            alt=""
+            loading="lazy"
+            class="absolute -top-[142px] -left-[140px] w-[300px]"
+          />
+          <img
+            src="cash-removebg-preview.png"
+            alt=""
+            loading="lazy"
+            class="absolute top-[150px] -right-[180px] w-[300px]"
+          />
+
+          <!-- content -->
+          <div
+            class="w-full bg-[#181c2e] p-10 py-12 border border-slate-700 z-20 rounded-md"
+          >
+            <!-- left part -->
+            <div
+              class="flex flex-col justify-between items-start w-full h-full gap-12 z-20"
+            >
+              <h3
+                class="font-mullish text-[28px] text-white font-bold leading-10 max-w-[500px]"
+              >
+                Manage your company's finances with
+                <img
+                  src="Screenshot (274).png"
+                  alt=""
+                  width="168px"
+                  height="32px"
+                  class="inline"
+                />
+                <span class="font-bold text-greenLight">BANKING SYSTEM</span>
+              </h3>
+              <ul class="space-y-2">
+                <li class="font-mullish text-white flex items-center space-x-2">
+                  <i data-feather="check-circle" class="text-greenLight"></i>
+                  <span>Open a Digital Account</span>
+                </li>
+                <li class="font-mullish text-white flex items-center space-x-2">
+                  <i data-feather="check-circle" class="text-greenLight"></i>
+                  <span>Get Private ID</span>
+                </li>
+                <li class="font-mullish text-white flex space-x-2">
+                  <i data-feather="check-circle" class="text-greenLight"></i>
+                  <span>Finance Blog- To keep you up to date!</span>
+                </li>
+                <br />
+                <p class="font-mullish text-white flex items-center space-x-2">
+                  Our AI Features For Startups And Businesses-
+                </p>
+                <ul class="space-y-2">
+                  <li class="font-mullish text-white flex space-x-2">
+                    <i data-feather="check-circle" class="text-greenLight"></i>
+                    <span>Make Finance Plan</span>
+                  </li>
+                  <li class="font-mullish text-white flex space-x-2">
+                    <i data-feather="check-circle" class="text-greenLight"></i>
+                    <span>Manage Company's Expenses</span>
+                  </li>
+                  <li class="font-mullish text-white flex space-x-2">
+                    <i data-feather="check-circle" class="text-greenLight"></i>
+                    <span>Tax Deduction</span>
+                  </li>
+                  <li class="font-mullish text-white flex space-x-2">
+                    <i data-feather="check-circle" class="text-greenLight"></i>
+                    <span>Stock Management</span>
+                  </li>
+                  <li class="font-mullish text-white flex space-x-2">
+                    <i data-feather="check-circle" class="text-greenLight"></i>
+                    <span>Automate Payments</span>
+                  </li>
+                </ul>
+                <br />
+                <p class="font-mullish text-white flex items-center space-x-2">
+                  <span class="font-mullish font-bold text-greenLight"
+                    >CA, Manager or any other finance task. Paise Wallah Do It
+                    All!</span
+                  >
+                </p>
+              </ul>
+
+              <div class="flex flex-row w-full items-center space-x-4">
+                <button
+                  class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
+                >
+                  Start Now
+                  <div
+                    class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                      class="w-[20px] h-[20px] -skew-x-[20deg]"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                <div class="flex flex-row items-center cursor-pointer">
+                  <a
+                    href=""
+                    class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                    >Know More</a
+                  >
+                  <i
+                    data-feather="chevron-right"
+                    class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- adding bg -->
+            <img
+              src="blockchain-banking.png"
+              alt=""
+              class="w-[480px] absolute top-52 left-[550px] right-0 bottom-0"
+            />
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="grid grid-cols-3 w-full gap-4 my-14">
+          <!-- box-1 -->
+          <div
+            class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+          >
+            <img
+              src="R.png"
+              alt=""
+              class="bg-lightBlue absolute right-3 top-3 w-12 h-13 rounded-full z-[80] featureCardIcon"
+            />
+            <!-- shape -->
+            <svg
+              viewBox="0 0 349.32501220703125 225"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200 featureCardSVG"
+              style="stroke-opacity: 0.8"
+            >
+              <path
+                d="m 0 6 
+          a 6 6 0 0 1 6 -6 
+          h 250.32501220703125 
+          a 16 16 0 0 1 11 5 
+          l 77 77 
+          a 16 16 0 0 1 5 11 
+          v 126 
+          a 6 6 0 0 1 -6 6 
+          h -337.32501220703125 
+          a 6 6 0 0 1 -6 -6 
+          z"
+                fill="#181C2E"
+              ></path>
+            </svg>
+            <!-- content -->
+            <div
+              class="z-[1000] flex flex-col absolute h-full w-full pl-5 py-6 pr-8 justify-between"
+            >
+              <div>
+                <h2 class="text-[1.375rem] text-white font-bold leading-[1.2]">
+                  Current Account
+                </h2>
+                <p class="mt-6 text-grayText">
+                  Available for growing businesses, supported by fast-secure and
+                  encrypted technology. Option for both minimum and zero balance
+                  current account.
+                </p>
+              </div>
+              <div class="flex items-center cursor-pointer">
+                <a
+                  href="#"
+                  class="text-lightBlue500 font-bold transition-all duration-200"
+                  >Know More
+                </a>
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- box-2 -->
+          <div
+            class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+          >
+            <img
+              src="business-funding-options.jpg"
+              alt=""
+              class="bg-lightBlue absolute right-3 top-3 w-12 h-13 rounded-full z-[80] featureCardIcon"
+            />
+            <!-- shape -->
+            <svg
+              viewBox="0 0 349.32501220703125 225"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200 featureCardSVG"
+              style="stroke-opacity: 0.8"
+            >
+              <path
+                d="m 0 6 
+          a 6 6 0 0 1 6 -6 
+          h 250.32501220703125 
+          a 16 16 0 0 1 11 5 
+          l 77 77 
+          a 16 16 0 0 1 5 11 
+          v 126 
+          a 6 6 0 0 1 -6 6 
+          h -337.32501220703125 
+          a 6 6 0 0 1 -6 -6 
+          z"
+                fill="#181C2E"
+              ></path>
+            </svg>
+            <!-- content -->
+            <div
+              class="z-[1000] flex flex-col absolute h-full w-full pl-5 py-6 pr-8 justify-between"
+            >
+              <div>
+                <h2 class="text-[1.375rem] text-white font-bold leading-[1.2]">
+                  Funding
+                </h2>
+                <p class="mt-6 text-grayText">
+                  Special Funding Service provided with collaboration with 1000+
+                  angel investors, venture capitalists etc.
+                  <br />
+                  <span class="font-bold text-greenLight">OPEN FOR ALL</span>
+                </p>
+              </div>
+              <div class="flex items-center cursor-pointer">
+                <a
+                  href="#"
+                  class="text-lightBlue500 font-bold transition-all duration-200"
+                  >Know More
+                </a>
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- box-3 -->
+          <div
+            class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+          >
+            <img
+              src="upi.webp"
+              alt=""
+              class="bg-lightBlue absolute right-3 top-3 w-12 h-13 rounded-full z-[80] featureCardIcon"
+            />
+            <!-- shape -->
+            <svg
+              viewBox="0 0 349.32501220703125 225"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200 featureCardSVG"
+              style="stroke-opacity: 0.8"
+            >
+              <path
+                d="m 0 6 
+          a 6 6 0 0 1 6 -6 
+          h 250.32501220703125 
+          a 16 16 0 0 1 11 5 
+          l 77 77 
+          a 16 16 0 0 1 5 11 
+          v 126 
+          a 6 6 0 0 1 -6 6 
+          h -337.32501220703125 
+          a 6 6 0 0 1 -6 -6 
+          z"
+                fill="#181C2E"
+              ></path>
+            </svg>
+            <!-- content -->
+            <div
+              class="z-[1000] flex flex-col absolute h-full w-full pl-5 py-6 pr-8 justify-between"
+            >
+              <div>
+                <h2 class="text-[1.375rem] text-white font-bold leading-[1.2]">
+                  Link UPI
+                </h2>
+                <p class="mt-6 text-grayText">
+                  You can link all your UPI ID's with our Special ID and grow
+                  your business just through one app. Making payments more
+                  secure, fast and reliable for the user.
+                </p>
+              </div>
+              <div class="flex items-center cursor-pointer">
+                <a
+                  href="#"
+                  class="text-lightBlue500 font-bold transition-all duration-200"
+                  >Know More
+                </a>
+                <i
+                  data-feather="chevron-right"
+                  class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- demo option -->
+        <div
+          class="w-full flex flex-row items-center justify-evenly border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8"
+        >
+          <p class="font-mullish text-white text-xl">
+            Check out the live demo to learn how Paise Wallah works.
+            <span class="font-bold">No sign-up required!</span>
+          </p>
+
+          <button
+            class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200"
+          >
+            Check out the demo
+            <div
+              class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="w-[20px] h-[20px] -skew-x-[20deg]"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- premium section -->
+    <section class="bg-white relative">
+      <div class="relative w-11/12 mx-auto pt-4">
+        <img
+          src="premium.jpg"
+          alt=""
+          class="absolute w-[233px] left-[900px] -top-[11rem]"
+        />
+
+        <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[10]">
+          <!-- item -->
+          <div class="relative flex items-center">
+            <h2
+              class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]"
+            >
+              New In The
+              <br />
+              <span class="text-lightBlue500">Paise Wallah</span>
+              Premium
+            </h2>
+          </div>
+          <!-- card-01 -->
+          <div
+            class="p-10 bg-[url(C:\Users\hp\Desktop\Paise Wallah\instantsettlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(C:\Users\hp\Desktop\Paise Wallah\instant-settlement-bghover.svg)]"
+          >
+            <img
+              src="PayPremiumsWithCash-1536x1026.jpg"
+              alt=""
+              class="w-30 h-20"
+            />
+            <h3 class="font-mullish text-lg font-bold pt-4">AutoPay</h3>
+            <p class="font-mullish py-3 text-grayText leading-normal">
+              No need to worry to pay the bills and dues! Paise Wallah do it,
+              with this premium feature, it allows users to set auto payment
+              options for their bills and other types of payments.
+            </p>
+
+            <div class="flex flex-row items-center cursor-pointer group">
+              <a
+                href=""
+                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                >Know More</a
+              >
+              <i
+                data-feather="chevron-right"
+                class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+              ></i>
+            </div>
+          </div>
+          <!-- card-02 -->
+          <div
+            class="p-10 bg-[url(C:\Users\hp\Desktop\Paise Wallah\instantsettlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(C:\Users\hp\Desktop\Paise Wallah\instant-settlement-bghover.svg)]"
+          >
+            <img src="cash-removebg-preview.png" alt="" class="w-30 h-20" />
+            <h3 class="font-mullish text-lg font-bold pt-4">No Amount Limit</h3>
+            <p class="font-mullish py-3 text-grayText leading-normal">
+              Sometimes, big businesses need to pay or get big amount of money.
+              So, for them in the premium section there is no amount limit.
+              Don't worry, all money is transfered with unique 12-digit ID,
+              which user generates. Even, Paise Wallah don't monitor it.
+            </p>
+
+            <div class="flex flex-row items-center cursor-pointer group">
+              <a
+                href=""
+                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                >Know More</a
+              >
+              <i
+                data-feather="chevron-right"
+                class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+              ></i>
+            </div>
+          </div>
+          <!-- card-03 -->
+          <div
+            class="p-10 bg-[url(C:\Users\hp\Desktop\Paise Wallah\instantsettlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(C:\Users\hp\Desktop\Paise Wallah\instant-settlement-bghover.svg)]"
+          >
+            <img src="OIP.jpg" alt="" class="w-30 h-20" />
+            <h3 class="font-mullish text-lg font-bold pt-4">
+              Advanced Security Features
+            </h3>
+            <p class="font-mullish py-3 text-grayText leading-normal">
+              Two-factor authentication, biometric login, encryption,
+              tokenisation, fraud detection and avoidance, monitoring only
+              unusal activity.
+            </p>
+
+            <div class="flex flex-row items-center cursor-pointer group">
+              <a
+                href=""
+                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                >Know More</a
+              >
+              <i
+                data-feather="chevron-right"
+                class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+              ></i>
+            </div>
+          </div>
+          <!-- card-04 -->
+          <div
+            class="p-10 bg-[url(C:\Users\hp\Desktop\Paise Wallah\instantsettlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(C:\Users\hp\Desktop\Paise Wallah\instant-settlement-bghover.svg)]"
+          >
+            <img
+              src="multi-currency-multi-company-bevelpayment.png"
+              alt=""
+              class="w-30 h-20"
+            />
+            <h3 class="font-mullish text-lg font-bold pt-4">
+              International Payments
+            </h3>
+            <p class="font-mullish py-3 text-grayText leading-normal">
+              International payments can be essential for businesses that
+              operate in a global market or have suppliers, vendors, or
+              customers located in different countries. Paise Wallah take care
+              of it too.
+            </p>
+
+            <div class="flex flex-row items-center cursor-pointer group">
+              <a
+                href=""
+                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                >Know More</a
+              >
+              <i
+                data-feather="chevron-right"
+                class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+              ></i>
+            </div>
+          </div>
+          <!-- card-05 -->
+          <div
+            class="p-10 bg-[url(C:\Users\hp\Desktop\Paise Wallah\instantsettlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(C:\Users\hp\Desktop\Paise Wallah\instant-settlement-bghover.svg)]"
+          >
+            <img
+              src="illustration-of-characters-exchanging-currency-vector.jpg"
+              alt=""
+              class="w-30 h-20"
+            />
+            <h3 class="font-mullish text-lg font-bold pt-4">
+              Currency Exchange Services
+            </h3>
+            <p class="font-mullish py-3 text-grayText leading-normal">
+              In a new country and tired of going to embassy or a local-client
+              for currency exchange? No worries! Paise Wallah will convert it
+              for you and will get transfered in your Paise Wallah Wallet. You
+              can use it for any online payment or withdraw it as cash from any
+              nearby bank or ATM.
+            </p>
+
+            <div class="flex flex-row items-center cursor-pointer group">
+              <a
+                href=""
+                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"
+                >Know More</a
+              >
+              <i
+                data-feather="chevron-right"
+                class="w-5 h-5 text-lightBlue500 transition-all duration-200"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- uniqueness -->
+    <section
+      class="w-full bg-deepBlueHead bg-no-repeat bg-center bg-cover mt-20 relative"
+    >
+      <div class="relative w-11/12 mx-auto pt-4">
+        <h2 class="font-mullish font-bold text-2xl text-center text-white">
+          Uniqueness of Paise Wallah
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+        <p class="font-mullish text-center max-w-[450px] text-white mx-auto">
+          Empower your business with all the right tools that you need at free
+          of cost or at minimal price.
+        </p>
+
+        <div class="grid grid-cols-4 gap-[2rem] mt-8">
+          <!-- card-1 -->
+          <div>
+            <img src="CIP (1).jpg" alt="" class="w-20 h-20" />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              Instant Service
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              Doesn't matter it is online payment, currency exchange, AI work,
+              activation of account or even funding. Paise Wallah do it instant
+              for you.
+            </p>
+          </div>
+          <!-- card-2 -->
+          <div>
+            <img src="api-driven.207572da.svg" alt="" class="w-20 h-20" />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">API</h3>
+            <p class="font-mullish text-white opacity-80">
+              Build your business for scale with our complete API-driven
+              automation that requires zero manual intervention.
+            </p>
+          </div>
+
+          <!-- card-3 -->
+          <div>
+            <img src="1-2.jpg" alt="" class="w-20 h-20" />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              200+ National And 500+ International Banks
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              Paise Wallah provides support and services of 200+ National Banks
+              of India and 500+ International Banks of countries like USA,
+              Canada, New Zealand, Russia, China, Japan any the number goes to
+              120+ countries.
+            </p>
+          </div>
+
+          <!-- card-4 -->
+          <div>
+            <img
+              src="BlackRock-Vs-Goldman-Sachs-Whats-the-Difference-768x432.jpg"
+              alt=""
+              class="w-30 h-20"
+            />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              BlackRock and Goldman Sachs
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              The
+              <span class="font-extrabold text-orange-500"
+                >Only Bank In India</span
+              >
+              which have support and collaboration with BlackBox and Goldman
+              Sachs.
+            </p>
+          </div>
+
+          <!-- card-5 -->
+          <div>
+            <img src="support.714ccbce.svg" alt="" class="w-20 h-20" />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              Best Support In The Industry
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              Always available email, phone and chat based support to help you
+              in your every step.
+            </p>
+          </div>
+
+          <!-- card-6 -->
+          <div>
+            <img
+              src="dashboard-reporting.15590378.svg"
+              alt=""
+              class="w-20 h-20"
+            />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              Weekly and Monthly Report
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              It tooks lot of hard work for hours to make a weekly or a monthly
+              report, problem increases for large department. No need to worry
+              when Paise Wallah is here. Our AI tool make report from databases
+              or any input you give, based on real-time data with 100% accuracy
+              and precision.
+            </p>
+          </div>
+
+          <!-- card-7 -->
+          <div>
+            <img
+              src="try_these_proven_effective_presentation_techniques.jpg"
+              alt=""
+              class="w-30 h-20"
+            />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              Business Coach
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              The only platform which along with all the finance tools and other
+              related help also provides a specialised personal business coach
+              to all the startups that are solving a problem at just
+              <span class="font-extrabold text-green-500">90 USD</span>.
+              <br />
+              <br />
+              Wait a minute! A environmental friendly or a environment problem
+              solver based startup? Congratulations, for you its just at
+              <span class="font-extrabold text-green-600">0 USD</span>
+            </p>
+          </div>
+
+          <!-- card-8 -->
+          <div>
+            <img src="121.jpg" alt="" class="w-30 h-20" />
+            <h3 class="font-mullish text-white text-lg font-bold my-4">
+              Served 10M+ Customers
+            </h3>
+            <p class="font-mullish text-white opacity-80">
+              The only player in the industry which has served
+              <span>10M+ customers</span>(both small and large businesses) in
+              just 4 years.
+              <br />
+              <br />
+              <span
+                >Made 40+ unicorns just in India and Canada, all over the world
+                number goes to 100+ which all together are now worth more than
+                2.5 trillion dollars.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- business animation wallah section -->
+    <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[3px]">
+      <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+        <!-- left part -->
+        <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+          <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">
+            Join 1,000,000+ businesses using Paise Wallah
+          </h2>
+          <div class="w-6 h-1 bg-greenLight mx-auto my-4 mb-10"></div>
+          <p class="font-mullish opacity-80">
+            We make it easier for you to focus on building great products while
+            we work on simplifying your business, finances. Become one of us by
+            joining millions of our happy users and simplify the online payment
+            experience for your customers.
+          </p>
+          <p class="font-mullish mt-6 opacity-80">
+            Focus on your business while we handle the complexities of finances
+            and business support for you.
+          </p>
+        </div>
+
+        <!-- right part -->
+        <div class="w-[500px] h-[500px] relative overflow-y-hidden">
+          <div
+            style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+            class="absolute w-full h-[150px] top-0 z-50"
+          ></div>
+          <img
+            src="Untitled_cleanup.jpeg"
+            alt=""
+            class="absolute h-auto object-cover companiesList"
+          />
+          <div
+            style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+            class="absolute w-full h-[150px] bottom-0 z-50"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="relative">
+      <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+        <h2
+          class="font-mullish font-bold text-2xl text-deepBlueHead text-center"
+        >
+          An Experience <br />
+          People Love To Talk About
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+
+        <!-- left button -->
+        <button
+          class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 flex justify-center items-center"
+        >
+          <div
+            class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply"
+          >
+            <i
+              data-feather="chevron-right"
+              class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400 rotate-180"
+            ></i>
+          </div>
+        </button>
+
+        <!-- right button -->
+        <button
+          class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 flex justify-center items-center"
+        >
+          <div
+            class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply"
+          >
+            <i
+              data-feather="chevron-right"
+              class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"
+            >
+            </i>
+          </div>
+        </button>
+
+        <!-- content -->
+        <div
+          class="flex flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]"
+        >
+          <img
+            src="b6e1efd6-2d29-485c-b466-01e2c7dcca0a.png"
+            alt=""
+            class="h-[320px] w-[320px] rounded-xl"
+          />
+          <div class="max-w-[400px]">
+            <img src="quotes.svg" alt="" width="35px" height="40px" />
+            <p class="font-mullish text-3xl font-extralight text-gray-600">
+              Paise Wallah made my business from $1200 a year to $10M a year in
+              3 years
+            </p>
+            <a href="" class="text-grayText italic underline">Learn More</a>
+            <h3 class="font-mullish font-extrabold text-2xl">Rakesh Pandey</h3>
+            <p class="font-mullish font-medium">CEO, FoodieZ Company</p>
+            <img src="unnamed.jpg" alt="" width="80px" height="40px" />
+          </div>
+        </div>
+
+        <!-- 6 dot -->
+        <div class="w-full flex flex-row mx-auto space-x-2 justify-center">
+          <!-- dot-1 -->
+          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+          <!-- dot-2 -->
+          <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full"></div>
+          <!-- dot-3 -->
+          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+          <!-- dot-4 -->
+          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+          <!-- dot-5 -->
+          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+          <!-- dot-6 -->
+          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- last sign-up section -->
+    <section
+      class="bg-[url(CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]"
+    >
+      <!-- content -->
+      <div
+        class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-16"
+      >
+        <!-- left part -->
+        <div class="flex flex-col gap-5 mt-12 max-w-[580px]">
+          <h2 class="font-mullish font-bold text-2xl text-white">
+            Power-up your business with Paise Wallah
+          </h2>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <p class="font-mullish text-white">
+            Sign up now to get upto 40% OFF on your first 5 services and <br />
+            start growing your business and offer the best products/services to
+            your customers.
+          </p>
+
+          <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
+            <li class="font-mullish text-white flex flex-row">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>24*7 Support</span>
+            </li>
+            <li class="font-mullish text-white flex flex-row">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>API Access</span>
+            </li>
+            <li class="font-mullish text-white flex flex-row">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Access to entire product suite</span>
+            </li>
+            <li class="font-mullish text-white flex flex-row">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Quick Onboarding</span>
+            </li>
+          </ul>
+
+          <button
+            class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center py-3 px-4 place-self-start"
+          >
+            Sign Up
+            <svg
+              viewBox="0 0 24 24"
+              focusable="false"
+              class="w-[20px] h-[20px] -skew-x-[20deg]"
+            >
+              <path
+                fill="currentColor"
+                d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <img
+          src="fgh.jpg"
+          alt=""
+          width="248px"
+          height="282px"
+          class="mt-16 pt-3"
+        />
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
